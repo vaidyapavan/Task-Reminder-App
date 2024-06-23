@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+   
+    <div class="main">
+        
+        <div class="overlay">
+            <div class="title">
+                My Reminder App
+            </div>
+            <div class="title" id="end-date">
+                <!-- The end date will be inserted here by JavaScript -->
+            </div>
+            <div class="date-input-container">
+                <label for="user-end-date">Set your important Date Here I will keep track of it.. (e.g., 25 June 2024 4:00 PM):</label>
+                <br>
+                <input type="text" id="user-end-date" placeholder="25 June 2024 4:00 PM">
+                <button onclick="setEndDate()">Set the Date</button>
+            </div>
+            <div class="col">
+                <h2>Time to go:</h2>
+                <div>
+                    <input type="text" id="days" readonly>
+                    <label for="days">Days</label>
+                </div>
+                <div>
+                    <input type="text" id="hours" readonly>
+                    <label for="hours">Hours</label>
+                </div>
+                <div>
+                    <input type="text" id="minutes" readonly>
+                    <label for="minutes">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" id="seconds" readonly>
+                    <label for="seconds">Seconds</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20230316/pngtree-city-building-neon-background-image_1948832.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.date-input-container {
+    margin-bottom: 20px;
+}
+
+.date-input-container label {
+    font-size: 18px;
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.date-input-container input {
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.date-input-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color:#218838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.date-input-container button:hover {
+    background-color: #218838;
+    height: 50px;
+}
+
+.col {
+    display: flex;
+    /* grid: '50% 50% / 25% 25% 25% 25%'; */
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.col div {
+    margin: 0 10px;
+    text-align: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#end-date {
+    font-size: 30px;
+    color: lightgray;
+    margin-top: 10px;
+}
+#user-end-date{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    height: 50px;
+    width: 240px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+h2{
+    font-size: 40px;
+    color:darkseagreen;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .col{
+        /* flex-wrap: wrap; */
+        display: grid;
+         grid: '50% 50% / 25% 25% 25% 25%'; 
+
+    }
+    #user-end-date
+    {
+        width: 150px;
+
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .body {
+        
+        text-align: center;
+       
+    }
+    .col{
+        display: grid;
+         grid: '50% 50% / 25% 25% 25% 25%'; 
+        
+
+    }
+    #user-end-date
+    {
+        width: 100px;
+
+    }
+}
